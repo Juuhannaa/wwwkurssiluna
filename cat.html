@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Luna's Catnip</title>
+		<link rel="stylesheet" href="css/site.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			<header>	<!-- Header -->
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="tableetc.html">Prices</a></li>
+						<li><a href="media.html">Pics</a></li>
+						<li><a href="cat.html">Cat</a></li>
+					</ul>
+				</nav>
+				<div align="center"><img src="images/banner.jpg" class="bordered-image" width="985"/></div>
+			</header>
+			
+			<section id="main">	<!-- Main Section -->
+				<h1>Meow!</h1>
+				<h3>Drag this Luna!</h3>
+				<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<img src="images/dragluna.png" draggable="true" ondragstart="drag(event)" id="drag1" width="64" height="64">
+				</div>
+				<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" ></div><br>
+				<h3>Geolocation</h3>
+				<p>Luna knows where you live!</p>
+				<button onClick="getLocation()">Get Coordinates</button>
+				<p id="loc">Latitude: <br>Longitude: </p>
+				<div id="map"></div>
+
+			</section>
+			
+			<footer>	<!-- Footer -->
+				<p>Luna's Catnip Company &copy;<script type="text/javascript">var ct=new Date(); document.write(ct.getFullYear());</script></p>
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/random.js"></script>
+	</body>
+</html>
